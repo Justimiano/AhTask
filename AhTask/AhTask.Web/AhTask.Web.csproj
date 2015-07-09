@@ -118,6 +118,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\Images\Icones\github.png" />
+    <Content Include="App_Themes\Images\Icones\GlassMapper.png" />
+    <Content Include="App_Themes\Images\Icones\octopus.jpg" />
+    <Content Include="App_Themes\Images\Icones\octopus.png" />
+    <Content Include="App_Themes\Images\Icones\Sitecore.png" />
+    <Content Include="App_Themes\Images\Icones\TDS.png" />
+    <Content Include="App_Themes\Images\Icones\teamcity.png" />
+    <Content Include="App_Themes\Images\Icones\TFS.png" />
+    <Content Include="App_Themes\Images\Icones\web.jpg" />
+    <Content Include="App_Themes\Images\Icones\windowsazure.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
