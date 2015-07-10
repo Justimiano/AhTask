@@ -1,106 +1,132 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="row">
+
     <div class="jumbotron text-center">
         <h1>Welcome to AhTask</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
     </div>
-</div>
-<div class="row">
-    <div class="well text-center">
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="~/App_Themes/Images/Icones/github.png" alt="...">
-                <div class="caption">
-                    <h3>GitHub</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+<div class="well">
+    <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/App_Themes/Images/Icones/github.png" alt="...">
+                    <div class="caption">
+                        <h3>GitHub</h3>
+                        <p>...</p>
+                        <p>
+                            @Html.ActionLink("Learn More", "GitHub", "Tech", null, new { @class = "btn btn-primary" })
+                            <a href="https://github.com/Justimiano/AhTask" target="_blank" class="btn btn-warning" role="button">Visit Repos</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="~/App_Themes/Images/Icones/teamcity.png" alt="...">
-                <div class="caption">
-                    <h3>Team City</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/App_Themes/Images/Icones/teamcity.png" alt="...">
+                    <div class="caption">
+                        <h3>Team City</h3>
+                        <p>...</p>
+                        <p>
+                            @Html.ActionLink("Learn More", "TeamCity", "Tech", null, new { @class = "btn btn-primary" })
+                            <a href="https://www.jetbrains.com/teamcity/" target="_blank" class="btn btn-warning" role="button">Web</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="~/App_Themes/Images/Icones/octopus.jpg" alt="...">
-                <div class="caption">
-                    <h3>Octopus Deploy</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/App_Themes/Images/Icones/octopus.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Octopus Deploy</h3>
+                        <p>...</p>
+                        <p>
+                            @Html.ActionLink("Learn More", "OctopusDeploy", "Tech", null, new { @class = "btn btn-primary" })
+                            <a href="http://octopusdeploy.com/" target="_blank" class="btn btn-warning" role="button">Web</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="~/App_Themes/Images/Icones/TFS.png" alt="...">
-                <div class="caption">
-                    <h3>Team Foundation Server </h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/App_Themes/Images/Icones/TFS.png" alt="...">
+                    <div class="caption">
+                        <h3>Team Foundation Server </h3>
+                        <p>...</p>
+                        <p>
+                            @Html.ActionLink("Learn More", "TeamFoundationServer", "Tech", null, new { @class = "btn btn-primary" })
+                            <a href="https://athenahealth.visualstudio.com/" target="_blank" class="btn btn-warning" role="button">Visit TFS</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="~/App_Themes/Images/Icones/TDS.png" alt="...">
-                <div class="caption">
-                    <h3>TDS</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/App_Themes/Images/Icones/TDS.png" alt="...">
+                    <div class="caption">
+                        <h3>TDS</h3>
+                        <p>...</p>
+                        <p>
+                        <p>
+                            @Html.ActionLink("Learn More", "TeamDevelopmentSitecore", "Tech", null, new { @class = "btn btn-primary" })
+                            <a href="https://www.hhogdev.com/products/team-development-for-sitecore/overview.aspx" target="_blank" class="btn btn-warning" role="button">Web</a>
+                        </p>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="~/App_Themes/Images/Icones/Sitecore.png" alt="...">
-                <div class="caption">
-                    <h3>Sitecore</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/App_Themes/Images/Icones/Sitecore.png" alt="...">
+                    <div class="caption">
+                        <h3>Sitecore</h3>
+                        <p>...</p>
+                        <p>
+                            @Html.ActionLink("Learn More", "Sitecore", "Tech", null, new { @class = "btn btn-primary" })
+                            <a href="http://www.sitecore.net/" target="_blank" class="btn btn-warning" role="button">Web</a>
+
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="~/App_Themes/Images/Icones/windowsazure.png" alt="...">
-                <div class="caption">
-                    <h3>Windoes Azure</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/App_Themes/Images/Icones/windowsazure.png" alt="...">
+                    <div class="caption">
+                        <h3>Windoes Azure</h3>
+                        <p>...</p>
+                        <p>
+                            @Html.ActionLink("Learn More", "WindowsAzure", "Tech", null, new { @class = "btn btn-primary" })
+                            <a href="https://portal.azure.com/" target="_blank" class="btn btn-warning" role="button">Web</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="~/App_Themes/Images/Icones/GlassMapper.png" alt="...">
-                <div class="caption">
-                    <h3>Glass Mapper</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/App_Themes/Images/Icones/GlassMapper.png" alt="...">
+                    <div class="caption">
+                        <h3>Glass Mapper</h3>
+                        <p>...</p>
+                        <p>
+                            @Html.ActionLink("Learn More", "GlassMapper", "Tech", null, new { @class = "btn btn-primary" })
+                            <a href="http://www.glass.lu/" target="_blank" class="btn btn-warning" role="button">Web</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
+        
     </div>
 </div>
