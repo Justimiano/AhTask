@@ -3,6 +3,13 @@
     ViewBag.Title = "OctopusDeploy";
     Layout = "~/Views/Shared/_LayoutTech.cshtml";
 }
-
-<h2>OctopusDeploy</h2>
+<div class="jumbotron">
+    <h1 class="text-capitalize text-center">Octopus Deploy</h1>
+    <p class="text-center">
+        Octopus works with your build server to enable reliable, secure, automated releases of ASP.NET applications and Windows Services into test, staging and production environments, whether they are in the cloud or on-premises.
+    </p>
+    <p class="text-right">
+        @Html.ActionLink("Learn More", "Index", "OctopusDeploy", null, new { @class = "btn btn-primary" })
+    </p>
+</div>
 

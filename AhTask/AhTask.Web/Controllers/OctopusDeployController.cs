@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace AhTask.Web.Controllers
 {
-    public class GStartedController : Controller
+    public class OctopusDeployController : Controller
     {
-        // GET: GStarted
+        // GET: OctopusDeploy
         public ActionResult Index()
         {
             return View();

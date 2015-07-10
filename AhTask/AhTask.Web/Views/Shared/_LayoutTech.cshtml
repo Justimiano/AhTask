@@ -23,7 +23,6 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Tech", "Index", "Tech")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
             </div>
         </div>
@@ -45,7 +44,10 @@
 
             </div>
             <div class="col-lg-9 col-md-9">
-                @RenderBody()
+                <div class="row">
+                    @RenderBody()
+                </div>
+                
             </div>
             
         </div>
