@@ -51,5 +51,9 @@ namespace AhTask.Web.Controllers
             return View();
         }
 
+        public ActionResult GitHub()
+        {
+            return View();
+        }
     }
 }
