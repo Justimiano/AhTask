@@ -134,6 +134,14 @@
     <Content Include="App_Themes\Images\Icones\octopus.jpg" />
     <Content Include="App_Themes\Images\Icones\octopus.png" />
     <Content Include="App_Themes\Images\Icones\Sitecore.png" />
+    <Content Include="App_Themes\Images\Icones\small\github.png" />
+    <Content Include="App_Themes\Images\Icones\small\GlassMapper.png" />
+    <Content Include="App_Themes\Images\Icones\small\octopus.png" />
+    <Content Include="App_Themes\Images\Icones\small\Sitecore.png" />
+    <Content Include="App_Themes\Images\Icones\small\TDS.png" />
+    <Content Include="App_Themes\Images\Icones\small\teamcity.png" />
+    <Content Include="App_Themes\Images\Icones\small\TFS.png" />
+    <Content Include="App_Themes\Images\Icones\small\windowsazure.png" />
     <Content Include="App_Themes\Images\Icones\TDS.png" />
     <Content Include="App_Themes\Images\Icones\teamcity.png" />
     <Content Include="App_Themes\Images\Icones\TFS.png" />

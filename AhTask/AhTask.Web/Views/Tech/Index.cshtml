@@ -1,75 +1,168 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutTech.cshtml";
 }
 
 <div class="jumbotron">
     <h1 class="text-capitalize text-center">Tech</h1>
-    <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt
-    </p>   
+    <p class="text-justify">
+        The AhTask project was developed using several different technologies. We are using in AhTask project the same technologies that being used in Athenahealth website project in order to make the smooth transitions between them. Developer starts work on AhTask project and gradually move into Athenahealth
+    </p>
 </div>
 <div class="well">
 
     <div>
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#Screen" aria-controls="Screen" role="tab" data-toggle="tab">Development</a></li>
-            <li role="presentation"><a href="#Video" aria-controls="Video" role="tab" data-toggle="tab">Management</a></li>
+            <li role="presentation" class="active"><a href="#Development" aria-controls="Development" role="tab" data-toggle="tab">Development's technologies</a></li>
+            <li role="presentation"><a href="#Management" aria-controls="Management" role="tab" data-toggle="tab">Management's technologies</a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="Screen">Development</div>
-            <div role="tabpanel" class="tab-pane" id="Video">
+            <div role="tabpanel" class="tab-pane active" id="Development">
 
+               <br />
+                <!-- Sitecore -->
 
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Installation
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                About Installation
-                            </div>
-                        </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="@Url.Action("Sitecore","Tech")">
+                            <img class="media-object" src="~/App_Themes/Images/Icones/small/Sitecore.png" alt="...">
+                        </a>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Gettting Strted
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body">
-                                About First Steps
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Build Systems
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body">
-                                How to create a builds
-                            </div>
-                        </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Sitecore</h4>
+                        The Content Mangement System (CMS) used to develop the AthenaTak demo and AhTask project.
                     </div>
                 </div>
 
+                <!-- Sitecore END-->
 
+                <!-- Glass Mapper -->
+                <div class="media">
+                    <div class="media-left">
+                        <a href="@Url.Action("GlassMapper","Tech")">
+                            <img class="media-object" src="~/App_Themes/Images/Icones/small/GlassMapper.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Glass Mapper</h4>
+                        The Object Relationar Mapper (ORM) used to do mapping between of Sitecore data template with C# object.
+                    </div>
+                </div>
+
+                <!-- Glass Mapper END-->
+                
+                <!-- GitHub -->
+                <br />
+                <div class="media">
+                    <div class="media-left">
+                        <a href="@Url.Action("GitHub","Tech")">
+                            <img class="media-object" src="~/App_Themes/Images/Icones/small/github.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">GitHub</h4>
+                        The GitHub is the source contoll used to share and centralized the project.
+                    </div>
+                </div>
+
+                <!-- GitHub END-->
+
+                <!-- Team Development for Sitecore  -->
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="@Url.Action("TeamDevelopmentSitecore","Tech")">
+                            <img class="media-object" src="~/App_Themes/Images/Icones/small/TDS.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Team Development for Sitecore</h4>
+                        The source controll used to share and centralize the sitecore webiste.
+                    </div>
+                </div>
+
+                <!-- Team Development for Sitecore END-->                
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Management">
+
+                <!-- GitHub -->
+                <br />
+                <div class="media">
+                    <div class="media-left">
+                        <a href="@Url.Action("GitHub","Tech")">
+                            <img class="media-object" src="~/App_Themes/Images/Icones/small/github.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">GitHub</h4>
+                        The GitHub is the source contol used to share and centralized the project.
+                    </div>
+                </div>
+
+                <!-- GitHub END-->
+
+                <!-- Windows Azure -->
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="@Url.Action("WindowsAzure","Tech")">
+                            <img class="media-object" src="~/App_Themes/Images/Icones/small/windowsazure.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Windows Azure</h4>
+                        The web cloud service to host webiste and create Virtual Machine server to host team Server and Octopus Server.
+                    </div>
+                </div>
+
+                <!-- Windows Azure END-->
+
+                <!-- Team City -->
+                <div class="media">
+                    <div class="media-left">
+                        <a href="@Url.Action("TeamCity","Tech")">
+                            <img class="media-object" src="~/App_Themes/Images/Icones/small/teamcity.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">TeamCity</h4>
+                        The Continuous Integrations (CI) server to build and test the AhTask project.
+                    </div>
+                </div>
+
+                <!-- Team City END-->
+
+                <!-- Octopus Deploy -->
+                <div class="media">
+                    <div class="media-left">
+                        <a href="@Url.Action("OctopusDeploy","Tech")">
+                            <img class="media-object" src="~/App_Themes/Images/Icones/small/octopus.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Octopus Deploy</h4>
+                        The Continuous Deploy (CD) server to deploy the AhTask project to all environments.
+                    </div>
+                </div>
+
+                <!-- Octopus Deploy END-->
+
+                <!-- Team Foundation Server -->
+                <div class="media">
+                    <div class="media-left">
+                        <a href="@Url.Action("TeamFoundationServer","Tech")">
+                            <img class="media-object" src="~/App_Themes/Images/Icones/small/TFS.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Team Foundation Server</h4>
+                        The Team Foundation Server (TFS) allow us to management all AhTask development process.
+                    </div>
+                </div>
+
+                <!-- Team Foundation Server END-->
 
             </div>
         </div>
