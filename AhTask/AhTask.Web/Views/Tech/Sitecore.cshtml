@@ -1,82 +1,74 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Sitecore";
     Layout = "~/Views/Shared/_LayoutTech.cshtml";
 }
 
 <div class="jumbotron">
-    <h1 class="text-capitalize text-center">Sitecore</h1>
-    <p class="text-center">
-        Sitecore is the global leader in customer experience management that lets marketers own the experience they deliver to their customers and prospects.
-    </p>
-    <p class="text-right">
-        @Html.ActionLink("Learn More", "Index", "Sitecore", null, new { @class = "btn btn-primary" })
-    </p>
+    <span class="well-sm label label-danger"><b>Sitecore</b></span>
+    <h2 class="text-capitalize"><strong>Sitecore</strong></h2>
+    <p class="text-justify">
+        Sitecore is the most popular Content Management Syetem (CMS) that lets marketers own the experience they deliver to their customers and prospects.
+        These courses will take you from a complete beginner to proficiency using Sitecore and Sitecore Rocks.
+    </p>    
 </div>
 
+<!-- Try Sitecore Path-->
 <div class="well">
-
-    <div>
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#Screen" aria-controls="Screen" role="tab" data-toggle="tab">Screen</a></li>
-            <li role="presentation"><a href="#Video" aria-controls="Video" role="tab" data-toggle="tab">Video</a></li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="Screen">Sreen</div>
-            <div role="tabpanel" class="tab-pane" id="Video">
-
-
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Installation
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                About Installation
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Gettting Strted
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body">
-                                About First Steps
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Build Systems
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body">
-                                How to create a builds
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="@Url.Action("Index", "TrySitecore", new { Area="Sitecore"})">
+                <img class="media-object" src="~/App_Themes/Images/Icones/Sitecore/TrySitecore.png" alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading lead">Course</h4>
+            <a href="@Url.Action("Index", "TrySitecore", new { Area="Sitecore"})">
+                <h4 class="media-heading"><b>Try Sitecore</b></h4>
+            </a>
+            <p>
+                Be introduced to the basic concepts of Sitecore.
+            </p>
         </div>
     </div>
-
 </div>
+<!-- Try Sitecore path End-->
+<!-- Sitecore Developer path-->
+<div class="well">
+    <div class="media">
+        <div class="media-left">
+            <a href="@Url.Action("Index", "Developer", new { Area="Sitecore"})">
+                <img class="media-object" src="~/App_Themes/Images/Icones/Sitecore/SitecoreRocks.png" alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading lead">Course</h4>
+            <a href="@Url.Action("Index", "Developer", new { Area="Sitecore"})">
+                <h4 class="media-heading"><b>Sitecore Developer</b></h4>
+            </a>
+            <p>
+                Get a more advanced introduction and guid to Sitecore
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Sitecore Developer path End -->
+<!-- Sitecore Real-->
+<div class="well">
+    <div class="media">
+        <div class="media-left">
+            <a href="@Url.Action("Index", "Real", new { Area="Sitecore"})">
+                <img class="media-object" src="~/App_Themes/Images/Icones/Sitecore/SitecoreAdvanced.png" alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading lead">Course</h4>
+            <a href="@Url.Action("Index", "Real", new { Area="Sitecore"})">
+                <h4 class="media-heading"><b>Sitecore Real</b></h4>
+            </a>
+            <p>
+                Learn more advanced Sitecore techniques
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Sitecore Real path End-->

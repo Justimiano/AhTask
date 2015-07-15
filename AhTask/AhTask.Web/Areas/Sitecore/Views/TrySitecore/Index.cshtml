@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutSitecore.cshtml";
+}
+
+<div class="jumbotron">
+    <span class="well-sm label label-danger"><b>Sitecore</b></span>
+    <h2 class="text-uppercase"><strong>try Sitecore</strong></h2>
+    <p>...</p>
+</div>
+
+<blockquote>
+    <h2>Course Description</h2>
+    <p>
+        Learn how to use Sitecore by reviewing the basic concepts of Sitecore. Try out this introductory course that was created with Sitecore.
+    </p>
+</blockquote>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Course Overview</h3>
+    </div>
+    <div class="panel-body">
+        <div class="media">
+            <div class="media-left">
+                <a href="@Url.Action("Installation", "TrySitecore", new { Area="Sitecore"})">
+                    <img class="media-object" src="~/App_Themes/Images/Icones/Sitecore/sitecoreInstallation.png" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <a href="@Url.Action("Installation", "TrySitecore", new { Area = "Sitecore" })">
+                    <h4 class="media-heading"><b>Installation</b></h4>
+                </a>
+                <p>
+                    Learn how to install and manager the Sitecore Instance using the Sitecore Instance Manager (SIM).
+                </p>
+                <p>
+                    <a href="@Url.Action("Installation", "TrySitecore", new { Area = "Sitecore" })" class="btn btn-info">
+                        <span class="glyphicon glyphicon-play-circle"></span> Watch Videos
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left">
+                <a href="@Url.Action("Interface", "TrySitecore", new { Area="Sitecore"})">
+                    <img class="media-object" src="~/App_Themes/Images/Icones/Sitecore/SitecoreInterface.png" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <a href="@Url.Action("Interface", "TrySitecore", new { Area = "Sitecore" })">
+                    <h4 class="media-heading"><b>Interface</b></h4>
+                </a>
+                <p>
+                    Learn how and when to use different Sitecore Interface.
+                </p>
+                <p>
+                    <a href="@Url.Action("Interface", "TrySitecore", new { Area = "Sitecore" })" class="btn btn-info">
+                        <span class="glyphicon glyphicon-play-circle"></span> Watch Videos
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left">
+                <a href="@Url.Action("Templates", "TrySitecore", new { Area="Sitecore"})">
+                    <img class="media-object" src="~/App_Themes/Images/Icones/Sitecore/SitecoreTemplate.png" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <a href="@Url.Action("Templates", "TrySitecore", new { Area = "Sitecore" })">
+                    <h4 class="media-heading"><b>Templates</b></h4>
+                </a>
+                <p>
+                    Learn how to create data template and how to use it.
+                </p>
+                <p>
+                    <a href="@Url.Action("Templates", "TrySitecore", new { Area = "Sitecore" })" class="btn btn-info">
+                        <span class="glyphicon glyphicon-play-circle"></span> Watch Videos
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
