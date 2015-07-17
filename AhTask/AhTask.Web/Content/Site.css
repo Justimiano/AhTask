@@ -23,4 +23,6 @@ textarea {
     max-width: 280px;
 }
 
-.fix-height div{min-height:220px;}
+.fix-height div{min-height:245px;}
+.fg-red{color:#e51c23!important;}
+a{text-decoration:none!important;}

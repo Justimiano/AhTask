@@ -23,72 +23,77 @@
     </p>
 </div>
 
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Course Overview</h3>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <div class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-play fa-5x fg-red"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Infrastructure</h4>
+                            Learn how and when to use different Sitecore Interface.
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1C0WKk08yE8"></iframe>
+                </div>
+             </div>
+        </div>
     </div>
-    <div class="panel-body">
-        <div class="media">
-            <div class="media-left">
-                <a href="@Url.Action("Installation", "TrySitecore", new { Area="Sitecore"})">
-                    <img class="media-object" src="~/App_Themes/Images/Icones/Sitecore/sitecoreInstallation.png" alt="...">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <div class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-play fa-5x fg-red"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Interface</h4>
+                            Learn how and when to use different Sitecore Interface.
+                        </div>
+                    </div>
                 </a>
-            </div>
-            <div class="media-body">
-                <a href="@Url.Action("Installation", "TrySitecore", new { Area = "Sitecore" })">
-                    <h4 class="media-heading"><b>Installation</b></h4>
-                </a>
-                <p>
-                    Learn how to install and manager the Sitecore Instance using the Sitecore Instance Manager (SIM).
-                </p>
-                <p>
-                    <a href="@Url.Action("Installation", "TrySitecore", new { Area = "Sitecore" })" class="btn btn-info">
-                        <span class="glyphicon glyphicon-play-circle"></span> Watch Videos
-                    </a>
-                </p>
             </div>
         </div>
-
-        <div class="media">
-            <div class="media-left">
-                <a href="@Url.Action("Interface", "TrySitecore", new { Area="Sitecore"})">
-                    <img class="media-object" src="~/App_Themes/Images/Icones/Sitecore/SitecoreInterface.png" alt="...">
-                </a>
-            </div>
-            <div class="media-body">
-                <a href="@Url.Action("Interface", "TrySitecore", new { Area = "Sitecore" })">
-                    <h4 class="media-heading"><b>Interface</b></h4>
-                </a>
-                <p>
-                    Learn how and when to use different Sitecore Interface.
-                </p>
-                <p>
-                    <a href="@Url.Action("Interface", "TrySitecore", new { Area = "Sitecore" })" class="btn btn-info">
-                        <span class="glyphicon glyphicon-play-circle"></span> Watch Videos
-                    </a>
-                </p>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1C0WKk08yE8"></iframe>
+                </div>
             </div>
         </div>
-
-        <div class="media">
-            <div class="media-left">
-                <a href="@Url.Action("Templates", "TrySitecore", new { Area="Sitecore"})">
-                    <img class="media-object" src="~/App_Themes/Images/Icones/Sitecore/SitecoreTemplate.png" alt="...">
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+            <div class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-play fa-5x fg-red"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Template</h4>
+                            Learn how and when to use different Sitecore Interface.
+                        </div>
+                    </div>
                 </a>
             </div>
-            <div class="media-body">
-                <a href="@Url.Action("Templates", "TrySitecore", new { Area = "Sitecore" })">
-                    <h4 class="media-heading"><b>Templates</b></h4>
-                </a>
-                <p>
-                    Learn how to create data template and how to use it.
-                </p>
-                <p>
-                    <a href="@Url.Action("Templates", "TrySitecore", new { Area = "Sitecore" })" class="btn btn-info">
-                        <span class="glyphicon glyphicon-play-circle"></span> Watch Videos
-                    </a>
-                </p>
-            </div>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1C0WKk08yE8"></iframe>
+                </div>
+              </div>
         </div>
     </div>
 </div>
