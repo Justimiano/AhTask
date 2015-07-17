@@ -137,9 +137,6 @@
     <Content Include="App_Themes\Images\Icones\GlassMapper.png" />
     <Content Include="App_Themes\Images\Icones\octopus.jpg" />
     <Content Include="App_Themes\Images\Icones\octopus.png" />
-    <Content Include="App_Themes\Images\Icones\Path\SitecoreAdvanced.png" />
-    <Content Include="App_Themes\Images\Icones\Path\SitecoreRocks.png" />
-    <Content Include="App_Themes\Images\Icones\Path\TrySitecore.png" />
     <Content Include="App_Themes\Images\Icones\Sitecore\Sitecore.png" />
     <Content Include="App_Themes\Images\Icones\Sitecore\SitecoreAdvanced.png" />
     <Content Include="App_Themes\Images\Icones\Sitecore\sitecoreInstallation.png" />
@@ -180,6 +177,7 @@
     <Content Include="Areas\Sitecore\Views\Developer\SitecoreRocks.cshtml" />
     <Content Include="Areas\Sitecore\Views\Developer\Presentation.cshtml" />
     <Content Include="Areas\Sitecore\Views\Developer\Components.cshtml" />
+    <None Include="Properties\PublishProfiles\AhTaskDev.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
